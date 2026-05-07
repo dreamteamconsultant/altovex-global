@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /.next/
+
+Sitemap: https://dreamteam-consulting.com/sitemap.xml
+
+User-agent: AdsBot-Google
+Allow: /
