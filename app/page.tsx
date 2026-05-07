@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import DashboardMetrics from '@/components/DashboardMetrics';
 import AltovexHeroSection from '@/components/AltovexHeroSection';
 import ExecutiveArchitectureSection from '@/components/ExecutiveArchitectureSection';
 import RegionalNetworkSection from '@/components/RegionalNetworkSection';
@@ -12,6 +13,7 @@ export default function Home() {
   return (
     <main className="bg-[#07080A] text-white">
       <Navigation />
+      <DashboardMetrics />
       <AltovexHeroSection />
       <ExecutiveArchitectureSection />
       <RegionalNetworkSection />
