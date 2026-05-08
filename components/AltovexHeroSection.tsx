@@ -20,10 +20,10 @@ export default function AltovexHeroSection() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
-              <a href="#contact" className="inline-flex items-center justify-center rounded-lg bg-[#C9A84C] px-6 py-3 font-bold uppercase tracking-wider text-[#07080A] transition-all hover:shadow-lg hover:shadow-[#C9A84C]/50 hover:scale-105 md:px-8 md:py-4">
-                Request Consultation
+              <a href="/contact" className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 font-bold uppercase tracking-[0.22em] text-[#07080A] transition-all hover:shadow-lg hover:shadow-white/20 hover:scale-105 md:px-8 md:py-4">
+                Book Service
               </a>
-              <a href="#fleet" className="inline-flex items-center justify-center rounded-lg border-2 border-[#C9A84C] px-6 py-3 font-bold uppercase tracking-wider text-[#C9A84C] transition-all hover:bg-[#C9A84C] hover:text-[#07080A] md:px-8 md:py-4">
+              <a href="/fleet" className="inline-flex items-center justify-center rounded-full border-2 border-white/20 px-6 py-3 font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-[#07080A] md:px-8 md:py-4">
                 Explore Fleet
               </a>
             </div>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import WhatsAppButton from '@/components/WhatsAppButton'
 
 const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const _spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
@@ -78,6 +79,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased dark bg-background text-foreground">
         {children}
+        <WhatsAppButton />
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
     </html>

@@ -115,15 +115,15 @@ export default function DashboardMetrics() {
         {/* Bottom CTA */}
         <div className="mt-12 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6 md:mt-16">
           <a
-            href="#contact"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#C9A84C] px-6 py-3 font-bold uppercase tracking-wider text-[#07080A] transition-all hover:shadow-lg hover:shadow-[#C9A84C]/50 hover:scale-105 md:px-8 md:py-4"
+            href="/contact"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-white px-6 py-3 font-bold uppercase tracking-[0.22em] text-[#07080A] transition-all hover:shadow-lg hover:shadow-white/20 hover:scale-105 md:px-8 md:py-4"
           >
             Book Service
             <span>→</span>
           </a>
           <a
-            href="#architecture"
-            className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-[#C9A84C] px-6 py-3 font-bold uppercase tracking-wider text-[#C9A84C] transition-all hover:bg-[#C9A84C] hover:text-[#07080A] md:px-8 md:py-4"
+            href="/architecture"
+            className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-white/20 px-6 py-3 font-bold uppercase tracking-[0.22em] text-white transition-all hover:bg-white hover:text-[#07080A] md:px-8 md:py-4"
           >
             Learn More
             <span>→</span>
