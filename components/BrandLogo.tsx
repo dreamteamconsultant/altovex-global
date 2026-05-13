@@ -10,14 +10,14 @@ export default function BrandLogo({ scrolled = false, compact = false }: BrandLo
   return (
     <Link href="/" className="flex items-center gap-3">
       <span
-        className={`flex h-12 w-12 items-center justify-center rounded-2xl border transition-all duration-300 ${scrolled ? 'border-white/15 bg-white/5 shadow-lg shadow-black/20' : 'border-[#07080A]/10 bg-white shadow-[0_10px_30px_rgba(7,8,10,0.08)]'}`}
+        className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-lg border border-[#07080A]/10 bg-white"
       >
         <Image
-          src="/altovex-mark.svg"
+          src="/altovex-logo.jpg"
           alt="Altovex Global Logistics"
-          width={34}
-          height={34}
-          className="h-8 w-8"
+          width={48}
+          height={48}
+          className="h-12 w-12 object-cover"
           priority
         />
       </span>

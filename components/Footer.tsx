@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/altovex-mark.svg" alt="Altovex Global Logistics logo" className="w-10 h-10 rounded-2xl border border-white/10 bg-white/5 p-1" />
+              <img src="/altovex-logo.jpg" alt="Altovex Global Logistics logo" className="w-10 h-10 rounded-lg object-cover border border-[#333333] bg-[#07080A]" />
               <span className="font-sans font-bold text-base md:text-lg">
                 Altovex <span className="text-[#C9A84C]">Global Logistics</span>
               </span>
