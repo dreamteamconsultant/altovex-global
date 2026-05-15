@@ -137,7 +137,7 @@ export default function ContactForm() {
           name="name"
           value={formData.name}
           onChange={handleChange}
-          className={`w-full px-4 py-3 border bg-[#0A0A0A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all ${
+          className={`w-full px-4 py-3 border bg-[#0B1929]/60 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all backdrop-blur-sm ${
             errors.name ? 'border-red-500' : 'border-[#333333]'
           }`}
           placeholder="Your name"
@@ -164,7 +164,7 @@ export default function ContactForm() {
           name="email"
           value={formData.email}
           onChange={handleChange}
-          className={`w-full px-4 py-3 border bg-[#0A0A0A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all ${
+          className={`w-full px-4 py-3 border bg-[#0B1929]/60 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all backdrop-blur-sm ${
             errors.email ? 'border-red-500' : 'border-[#333333]'
           }`}
           placeholder="your@email.com"
@@ -191,7 +191,7 @@ export default function ContactForm() {
           value={formData.message}
           onChange={handleChange}
           rows={5}
-          className={`w-full px-4 py-3 border bg-[#0A0A0A] text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all resize-none ${
+          className={`w-full px-4 py-3 border bg-[#0B1929]/60 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C9A84C] transition-all resize-none backdrop-blur-sm ${
             errors.message ? 'border-red-500' : 'border-[#333333]'
           }`}
           placeholder="Tell us about your agricultural needs..."
@@ -227,7 +227,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status.type === 'loading'}
-        className="w-full px-6 py-3 bg-[#C9A84C] hover:bg-[#E0C080] disabled:bg-[#996633] text-[#0A0A0A] font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"
+        className="w-full px-6 py-3 bg-[#C9A84C] hover:bg-[#E0C080] disabled:bg-[#996633] text-[#0B1929] font-bold rounded-lg transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105"
         aria-busy={status.type === 'loading'}
       >
         {status.type === 'loading' ? (

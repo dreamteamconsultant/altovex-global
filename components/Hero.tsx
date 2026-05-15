@@ -34,7 +34,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-[#0A0A0A] text-white pt-32 pb-20 relative overflow-hidden flex items-center justify-center">
+    <section className="min-h-screen bg-gradient-to-br from-[#0B1929] via-[#0F2A47] to-[#0D1E35] text-white pt-32 pb-20 relative overflow-hidden flex items-center justify-center">
       {/* Animated grid background */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -48,17 +48,17 @@ export default function Hero() {
           </svg>
         </div>
 
-        {/* Floating orbs */}
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#C9A84C] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#00A8FF] rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-float animation-delay-2000"></div>
-        <div className="absolute top-1/2 left-1/2 w-80 h-80 bg-[#1E3A5F] rounded-full mix-blend-screen filter blur-3xl opacity-10 animate-float animation-delay-3000"></div>
+        {/* Floating orbs - centered vertically */}
+        <div className="absolute top-1/3 left-10 w-72 h-72 bg-[#C9A84C] rounded-full mix-blend-screen filter blur-3xl opacity-20 animate-float"></div>
+        <div className="absolute top-1/2 right-10 w-96 h-96 bg-[#00A8FF] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-float animation-delay-2000"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-80 h-80 bg-[#1E3A5F] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-float animation-delay-3000"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Main content */}
           <div className="text-center mb-12 animate-slide-up">
-            <div className="inline-block mb-6 px-4 py-2 bg-[#1A1A1A] border border-[#333333] rounded-full text-[#C9A84C] text-sm font-medium">
+            <div className="inline-block mb-6 px-4 py-2 bg-[#1A2940]/60 border border-[#C9A84C]/40 rounded-full text-[#C9A84C] text-sm font-medium backdrop-blur-sm">
               Transforming Agriculture with AI & IoT
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -71,13 +71,13 @@ export default function Hero() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <a
-                href="#contact"
-                className="px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0A0A0A] font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+                href="/contact"
+                className="px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0B1929] font-bold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Get Started Today
               </a>
               <a
-                href="#services"
+                href="/architecture"
                 className="px-8 py-4 border-2 border-[#C9A84C] hover:bg-[#C9A84C] hover:text-[#0A0A0A] text-white font-bold rounded-lg transition-all duration-300 hover:scale-105"
               >
                 Explore Solutions

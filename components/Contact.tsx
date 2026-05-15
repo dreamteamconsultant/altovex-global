@@ -20,7 +20,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-[#0A0A0A]">
+    <section id="contact" className="py-20 bg-gradient-to-b from-[#0F2A47] to-[#0B1929]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-sans font-bold mb-4 text-white">
@@ -33,7 +33,7 @@ export default function Contact() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
           {contactInfo.map((info, index) => (
-            <div key={index} className="bg-[#1A1A1A] border border-[#333333] p-8 rounded-xl text-center hover:border-[#C9A84C] transition-all duration-300 hover-gold-border">
+            <div key={index} className="bg-[#1A2940]/70 border border-[#C9A84C]/20 p-8 rounded-xl text-center hover:border-[#C9A84C] transition-all duration-300 hover-gold-border backdrop-blur-sm">
               <div className="w-16 h-16 bg-[#1E3A5F] rounded-full flex items-center justify-center mx-auto mb-4">
                 <i className={`fas ${info.icon} text-2xl text-[#C9A84C]`}></i>
               </div>
@@ -43,7 +43,7 @@ export default function Contact() {
           ))}
         </div>
 
-        <div className="max-w-2xl mx-auto bg-[#1A1A1A] border border-[#333333] p-8 md:p-12 rounded-2xl">
+        <div className="max-w-2xl mx-auto bg-[#1A2940]/70 border border-[#C9A84C]/20 p-8 md:p-12 rounded-2xl backdrop-blur-sm">
           <ContactForm />
         </div>
 
@@ -62,7 +62,7 @@ export default function Contact() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 bg-[#1E3A5F] hover:bg-[#C9A84C] text-[#C9A84C] hover:text-[#0A0A0A] rounded-full flex items-center justify-center transition-all duration-300 border border-[#333333] hover:border-[#C9A84C]"
+                className="w-12 h-12 bg-[#1E3A5F]/60 hover:bg-[#C9A84C] text-[#C9A84C] hover:text-[#0B1929] rounded-full flex items-center justify-center transition-all duration-300 border border-[#C9A84C]/20 hover:border-[#C9A84C] backdrop-blur-sm"
                 aria-label={social.label}
               >
                 <i className={`fab ${social.icon}`}></i>

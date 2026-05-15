@@ -39,7 +39,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" className="py-20 bg-[#0A0A0A]">
+    <section id="portfolio" className="py-20 bg-gradient-to-b from-[#0F2A47] to-[#0B1929] relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-sans font-bold mb-4 text-white">
@@ -54,7 +54,7 @@ export default function Portfolio() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-[#333333] hover-gold-border bg-[#1A1A1A]"
+              className="group overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col border border-[#C9A84C]/20 hover-gold-border bg-[#1A2940]/70 backdrop-blur-sm"
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden bg-[#333333]">
@@ -64,11 +64,11 @@ export default function Portfolio() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
 
               {/* Content */}
-              <div className="bg-[#1A1A1A] p-6 flex-1 flex flex-col">
+              <div className="bg-[#1A2940]/70 p-6 flex-1 flex flex-col backdrop-blur-sm">
                 <p className="text-sm text-[#C9A84C] font-semibold mb-2">
                   <i className="fas fa-map-marker-alt mr-1"></i>{project.location}
                 </p>
@@ -90,7 +90,7 @@ export default function Portfolio() {
           </p>
           <a
             href="#contact"
-            className="inline-block px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0A0A0A] font-bold rounded-lg transition-all duration-300 hover:scale-105"
+            className="inline-block px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0B1929] font-bold rounded-lg transition-all duration-300 hover:scale-105"
           >
             Start Your Project
           </a>

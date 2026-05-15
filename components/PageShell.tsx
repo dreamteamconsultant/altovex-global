@@ -28,9 +28,15 @@ export default function PageShell({ title, description, children, dark = false }
         </div>
       </section>
 
+      <BookConsultationBox
+        tone={dark ? 'dark' : 'light'}
+        compact
+        title="Quick book"
+        description="Share the country, route, cargo, and delivery date so we can reply with the next step."
+      />
+
       {children}
 
-      <BookConsultationBox tone={dark ? 'dark' : 'light'} />
       <Footer />
     </main>
   );

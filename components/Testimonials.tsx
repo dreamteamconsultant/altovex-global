@@ -24,7 +24,7 @@ export default function Testimonials() {
   ];
 
   return (
-    <section id="testimonials" className="py-20 bg-[#0A0A0A]">
+    <section id="testimonials" className="py-20 bg-gradient-to-b from-[#0B1929] via-[#0F2A47] to-[#0D1E35]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-sans font-bold mb-4 text-white">
@@ -39,7 +39,7 @@ export default function Testimonials() {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-[#1A1A1A] p-8 rounded-xl border border-[#333333] shadow-lg hover:shadow-xl transition-all duration-300 hover-gold-border"
+              className="bg-[#1A2940]/70 p-8 rounded-xl border border-[#C9A84C]/20 shadow-lg hover:shadow-xl transition-all duration-300 hover-gold-border backdrop-blur-sm"
             >
               {/* Rating */}
               <div className="flex gap-1 mb-4">

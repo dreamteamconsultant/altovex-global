@@ -6,16 +6,17 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Home', href: '#hero' },
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Architecture', href: '/architecture' },
+    { label: 'Fleet', href: '/fleet' },
+    { label: 'Network', href: '/network' },
+    { label: 'Compliance', href: '/compliance' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-[#0A0A0A]/95 backdrop-blur-sm z-50 border-b border-[#333333]">
+    <header className="fixed top-0 w-full bg-gradient-to-r from-[#0B1929] to-[#0F2A47]/95 backdrop-blur-sm z-50 border-b border-[#C9A84C]/20">
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -29,12 +30,12 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex list-none gap-8">
+          <ul className="hidden md:flex list-none gap-6">
             {navItems.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="text-white font-medium hover:text-[#C9A84C] transition-colors relative group"
+                  className="text-white/80 font-medium hover:text-[#C9A84C] transition-colors relative group text-sm"
                 >
                   {item.label}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#C9A84C] group-hover:w-full transition-all duration-300"></span>
@@ -55,13 +56,13 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
-            <div className="absolute top-full left-0 right-0 bg-[#1A1A1A] border-b border-[#333333] md:hidden">
+            <div className="absolute top-full left-0 right-0 bg-[#0B1929]/95 border-b border-[#C9A84C]/20 md:hidden">
               <ul className="flex flex-col list-none p-4 gap-4">
                 {navItems.map((item) => (
                   <li key={item.label}>
                     <a
                       href={item.href}
-                      className="text-white font-medium hover:text-[#C9A84C] transition-colors block py-2"
+                      className="text-white/80 font-medium hover:text-[#C9A84C] transition-colors block py-2"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item.label}

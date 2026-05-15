@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-[#0A0A0A]">
+    <section id="about" className="py-20 bg-gradient-to-r from-[#0B1929] to-[#0F2A47]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Section */}
@@ -10,7 +10,7 @@ export default function About() {
               alt="DreamTeam Consulting team working on agricultural technology"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/50 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/50 to-transparent"></div>
           </div>
 
           {/* Content Section */}
@@ -48,7 +48,7 @@ export default function About() {
 
             <a
               href="#contact"
-              className="inline-block px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0A0A0A] font-bold rounded-lg transition-all duration-300 hover:scale-105"
+              className="inline-block px-8 py-4 bg-[#C9A84C] hover:bg-[#E0C080] text-[#0B1929] font-bold rounded-lg transition-all duration-300 hover:scale-105"
             >
               Start Your Journey
             </a>

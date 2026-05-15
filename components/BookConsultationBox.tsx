@@ -2,6 +2,7 @@ type BookConsultationBoxProps = {
   title?: string;
   description?: string;
   tone?: 'light' | 'dark';
+  compact?: boolean;
 };
 
 const emailAddress = 'info@altovexlogistics.com';
@@ -11,6 +12,7 @@ export default function BookConsultationBox({
   title = 'Book a consultation',
   description = 'Send us your route, cargo, or compliance needs and we will respond with a clear plan.',
   tone = 'light',
+  compact = false,
 }: BookConsultationBoxProps) {
   const mailSubject = encodeURIComponent('Altovex consultation request');
   const mailBody = encodeURIComponent('Hello Altovex team,\n\nI would like to book a consultation. Please reach out with the next steps.');
@@ -21,21 +23,25 @@ export default function BookConsultationBox({
     ? 'border-white/10 bg-white/5 text-white'
     : 'border-[#07080A]/10 bg-white text-[#07080A] shadow-[0_18px_50px_rgba(7,8,10,0.08)]';
 
+  const containerPadding = compact ? 'p-4 md:p-5' : 'p-6 md:p-8';
+  const titleSize = compact ? 'text-xl md:text-2xl' : 'text-2xl md:text-3xl';
+  const descriptionSize = compact ? 'mt-2 text-sm leading-6' : 'mt-3 text-sm leading-6 md:text-base';
+
   return (
-    <section className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <div className={`rounded-3xl border p-6 md:p-8 ${rootClassName}`}>
-        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+    <section className={`mx-auto w-full max-w-7xl px-4 ${compact ? 'py-4 sm:px-6 lg:px-8' : 'py-6 sm:px-6 lg:px-8'}`}>
+      <div className={`rounded-3xl border ${containerPadding} ${rootClassName}`}>
+        <div className={`grid gap-5 ${compact ? 'lg:grid-cols-[minmax(0,1fr)_auto]' : 'lg:grid-cols-[1fr_auto]'} lg:items-center`}>
           <div>
             <div className={`text-xs font-semibold uppercase tracking-[0.32em] ${tone === 'dark' ? 'text-[#C9A84C]' : 'text-[#1A3A6B]'}`}>
               Consultation
             </div>
-            <h3 className="mt-2 text-2xl font-semibold md:text-3xl">{title}</h3>
-            <p className={`mt-3 max-w-2xl text-sm leading-6 md:text-base ${tone === 'dark' ? 'text-white/70' : 'text-[#07080A]/65'}`}>
+            <h3 className={`mt-2 font-semibold ${titleSize}`}>{title}</h3>
+            <p className={`${descriptionSize} max-w-2xl ${tone === 'dark' ? 'text-white/70' : 'text-[#07080A]/65'}`}>
               {description}
             </p>
           </div>
 
-          <div className="flex flex-col gap-3 sm:flex-row lg:flex-col xl:flex-row">
+          <div className={`flex flex-col gap-3 sm:flex-row ${compact ? 'lg:flex-row' : 'lg:flex-col xl:flex-row'}`}>
             <a
               href={emailHref}
               className="inline-flex items-center justify-center rounded-full bg-white px-5 py-3 text-sm font-bold uppercase tracking-[0.22em] text-[#07080A] transition-transform hover:scale-[1.02]"

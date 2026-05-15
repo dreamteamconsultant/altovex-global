@@ -38,7 +38,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="py-20 bg-[#0A0A0A] relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-b from-[#0B1929] to-[#0F2A47] relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#C9A84C] rounded-full mix-blend-screen filter blur-3xl"></div>
@@ -59,7 +59,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#1A1A1A] border border-[#333333] rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col hover-gold-border"
+              className="bg-[#1A2940]/70 border border-[#C9A84C]/20 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group overflow-hidden flex flex-col hover-gold-border backdrop-blur-sm"
             >
               {service.image && (
                 <div className="relative h-48 w-full overflow-hidden bg-[#333333]">
@@ -73,7 +73,7 @@ export default function Services() {
               <div className="p-8 flex flex-col flex-grow">
                 <div className="mb-4">
                   <div className="w-16 h-16 bg-[#1E3A5F] rounded-lg flex items-center justify-center group-hover:bg-[#C9A84C] transition-colors duration-300">
-                    <i className={`fas ${service.icon} text-2xl text-[#C9A84C] group-hover:text-[#0A0A0A] transition-colors duration-300`}></i>
+                    <i className={`fas ${service.icon} text-2xl text-[#C9A84C] group-hover:text-white transition-colors duration-300`}></i>
                   </div>
                 </div>
                 <h3 className="text-xl font-bold font-sans mb-3 text-white">
