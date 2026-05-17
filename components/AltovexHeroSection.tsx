@@ -33,7 +33,7 @@ I would like to book a consultation.`);
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
-          <div className="flex flex-col justify-start">
+          <div className="flex flex-col justify-start relative z-60">
             <h1 className="max-w-4xl text-4xl font-extrabold leading-tight text-white md:text-5xl lg:text-7xl">
               Altovex Global Logistics
             </h1>
@@ -68,7 +68,7 @@ I would like to book a consultation.`);
             </div>
           </div>
 
-            <div className="rounded-3xl border border-[#C9A84C]/30 bg-[#0F1B2E]/50 p-5 md:p-6 shadow-[0_24px_60px_rgba(0,0,0,0.4)] backdrop-blur">
+            <div className="rounded-3xl border border-[#C9A84C]/30 bg-[#0F1B2E]/50 p-5 md:p-6 shadow-[0_24px_60px_rgba(0,0,0,0.4)] backdrop-blur relative z-10">
             <div className="mb-4 flex items-center gap-3">
               <div className="h-3 w-3 rounded-full bg-red-400" />
               <div className="h-3 w-3 rounded-full bg-yellow-400" />
