@@ -3,7 +3,7 @@ export default function TestimonialsSection() {
     {
       name: 'Kwame Asante',
       role: 'Farm Owner, Ghana',
-      text: "DreamTeam's water system helped us reduce irrigation costs by 40%. The ROI was achieved in just 8 months.",
+      text: "Altovex's water system helped us reduce irrigation costs by 40%. The ROI was achieved in just 8 months.",
       rating: 5,
     },
     {
@@ -15,7 +15,7 @@ export default function TestimonialsSection() {
     {
       name: 'Dr. Emmanuel Okafor',
       role: 'Ministry of Agriculture, Nigeria',
-      text: "DreamTeam is scaling agritech at the national level. Their platform is reliable, intuitive, and truly farmer-first.",
+      text: "Altovex is scaling agritech at the national level. Their platform is reliable, intuitive, and truly farmer-first.",
       rating: 5,
     },
   ];

@@ -4,7 +4,7 @@ export default function Testimonials() {
       name: 'Kwame Mensah',
       role: 'Cocoa Farmer, Ghana',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-      quote: 'DreamTeam\'s solutions have transformed my farm. The crop monitoring system has helped me increase yield by 35% while reducing costs significantly.',
+      quote: 'Altovex\'s solutions have transformed my farm. The crop monitoring system has helped me increase yield by 35% while reducing costs significantly.',
       rating: 5
     },
     {
@@ -18,7 +18,7 @@ export default function Testimonials() {
       name: 'John Kipchoge',
       role: 'Dairy Farmer, Kenya',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
-      quote: 'Working with DreamTeam has been incredible. Their data analytics platform helps me make smarter decisions about my herd and operations.',
+      quote: 'Working with Altovex has been incredible. Their data analytics platform helps me make smarter decisions about my herd and operations.',
       rating: 5
     },
   ];

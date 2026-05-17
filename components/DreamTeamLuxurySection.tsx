@@ -221,7 +221,7 @@ function ServiceVisual({ visual }: { visual: ServiceCard['visual'] }) {
   );
 }
 
-export default function DreamTeamLuxurySection() {
+export default function AltovexLuxurySection() {
   return (
     <>
       <div className="overflow-hidden border-b border-[#07080A]/20 bg-[#C9A84C] text-[#07080A]">
@@ -244,9 +244,9 @@ export default function DreamTeamLuxurySection() {
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#07080A]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 lg:px-8">
           <a href="#hero" className="flex items-center gap-4">
-            <img src="/dreamteam-logo.jpg" alt="DreamTeam Consulting" className="h-12 w-auto rounded-lg shadow-md" />
+            <img src="/altovex-logo.jpg" alt="Altovex" className="h-12 w-auto rounded-lg shadow-md" />
             <div className="hidden sm:block">
-              <div className="text-[0.7rem] uppercase tracking-[0.45em] text-white/45">DreamTeam</div>
+              <div className="text-[0.7rem] uppercase tracking-[0.45em] text-white/45">Altovex</div>
               <div className="text-lg font-semibold tracking-[0.2em] text-white">Consulting</div>
             </div>
           </a>
@@ -281,10 +281,10 @@ export default function DreamTeamLuxurySection() {
           <div className="max-w-3xl">
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-[#C9A84C]/25 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.35em] text-white/75">
               <span className="h-2 w-2 rounded-full bg-[#C9A84C] shadow-[0_0_18px_rgba(201,168,76,0.95)] animate-pulse" />
-              Africa-first agritech consulting
+              Africa-first agritech & logistics
             </div>
 
-            <p className="mb-5 max-w-xl text-sm uppercase tracking-[0.42em] text-white/45">DreamTeam Consulting</p>
+            <p className="mb-5 max-w-xl text-sm uppercase tracking-[0.42em] text-white/45">Altovex Consulting</p>
             <h1 className="text-5xl font-semibold leading-[0.95] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl">
               Luxury strategy for{' '}
               <span className="inline-flex min-h-[1.1em] flex-col overflow-hidden align-bottom text-[#C9A84C]">
@@ -477,7 +477,7 @@ export default function DreamTeamLuxurySection() {
               Build your agritech operating layer with a team that understands Africa.
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-8 text-white/74">
-              DreamTeam Consulting helps agricultural businesses move from fragmented field data to a premium, measurable strategy stack.
+              Altovex helps agricultural businesses move from fragmented field data to a premium, measurable strategy stack.
             </p>
           </div>
 
@@ -489,7 +489,7 @@ export default function DreamTeamLuxurySection() {
               Back to top
             </a>
             <a
-              href="mailto:hello@dreamteam.consulting"
+              href="mailto:hello@altovexlogistics.com"
               className="inline-flex items-center border border-white/20 bg-white/8 px-7 py-4 text-sm font-bold uppercase tracking-[0.25em] text-white transition-transform duration-300 hover:-translate-y-0.5 hover:border-white/45"
             >
               Start the conversation

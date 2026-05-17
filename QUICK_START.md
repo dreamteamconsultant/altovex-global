@@ -1,4 +1,4 @@
-# Quick Start Guide - DreamTeam Consulting Website
+# Quick Start Guide - Altovex Website
 
 ## 5-Minute Setup
 
@@ -95,7 +95,7 @@ Update the heading text (around line 9-11)
 ## File Structure
 
 ```
-DreamTeam-Consulting/
+Altovex/
 ├── app/
 │   ├── api/contact/route.ts      ← Contact form API
 │   ├── layout.tsx                ← SEO metadata

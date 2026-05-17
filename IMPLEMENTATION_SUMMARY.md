@@ -1,4 +1,4 @@
-# DreamTeam Consulting Website - Production Implementation Summary
+# Altovex Website - Production Implementation Summary
 
 ## Conversion Complete ✓
 
@@ -119,8 +119,8 @@ The HTML consulting website has been successfully converted into a production-re
 NEXT_PUBLIC_SUPABASE_URL=...
 NEXT_PUBLIC_SUPABASE_ANON_KEY=...
 RESEND_API_KEY=...
-CONTACT_EMAIL_TO=contact@dreamteam.com
-NEXT_PUBLIC_SITE_URL=https://dreamteam-consulting.com
+CONTACT_EMAIL_TO=info@altovexlogistics.com
+NEXT_PUBLIC_SITE_URL=https://altovexlogistics.com
 
 # Optional (with defaults)
 NEXT_PUBLIC_COMPANY_EMAIL

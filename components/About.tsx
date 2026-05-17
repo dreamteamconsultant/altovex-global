@@ -7,7 +7,7 @@ export default function About() {
           <div className="relative h-96 lg:h-full min-h-96 rounded-xl overflow-hidden shadow-lg border border-[#333333]">
             <img
               src="https://images.unsplash.com/photo-1625246333195-78d9c38ad576?w=800&q=80"
-              alt="DreamTeam Consulting team working on agricultural technology"
+              alt="Altovex team working on agricultural technology"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#0B1929]/50 to-transparent"></div>
@@ -15,12 +15,14 @@ export default function About() {
 
           {/* Content Section */}
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold font-sans font-bold mb-6 text-white">
-              About <span className="text-[#C9A84C]">DreamTeam</span>
-            </h2>
+                <h2 className="text-5xl md:text-7xl lg:text-9xl font-extrabold font-sans mb-6 leading-tight text-white">
+                  About
+                  <br />
+                  <span className="text-[#C9A84C]">Altovex</span>
+                </h2>
             
-            <p className="text-lg text-[#888888] mb-6 leading-relaxed">
-              DreamTeam Consulting is dedicated to revolutionizing agriculture across Africa through cutting-edge technology solutions. We believe that empowering farmers with data-driven insights and innovative tools is the key to sustainable growth and food security.
+            <p className="text-lg text-[#888888] mb-6 leading-relaxed max-w-3xl">
+              Altovex is dedicated to revolutionizing agriculture across Africa through cutting-edge technology solutions. We believe that empowering farmers with data-driven insights and innovative tools is the key to sustainable growth and food security.
             </p>
 
             <p className="text-lg text-[#888888] mb-8 leading-relaxed">

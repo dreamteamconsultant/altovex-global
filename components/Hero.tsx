@@ -54,14 +54,14 @@ export default function Hero() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 w-80 h-80 bg-[#1E3A5F] rounded-full mix-blend-screen filter blur-3xl opacity-15 animate-float animation-delay-3000"></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-6 lg:px-8 relative z-10">
+        <div className="max-w-5xl mx-auto">
           {/* Main content */}
           <div className="text-center mb-12 animate-slide-up">
             <div className="inline-block mb-6 px-4 py-2 bg-[#1A2940]/60 border border-[#C9A84C]/40 rounded-full text-[#C9A84C] text-sm font-medium backdrop-blur-sm">
               Transforming Agriculture with AI & IoT
             </div>
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-6xl md:text-8xl lg:text-9xl font-extrabold mb-6 leading-tight">
               The Future of <span className="gradient-text">Farming</span> is Here
             </h1>
             <p className="text-lg md:text-xl text-[#888888] mb-10 leading-relaxed max-w-2xl mx-auto">

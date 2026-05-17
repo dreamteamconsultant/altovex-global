@@ -8,12 +8,12 @@ export default function FAQSection() {
   const faqs = [
     {
       id: 'pricing',
-      question: 'How is DreamTeam priced?',
+      question: 'How is Altovex priced?',
       answer: 'Our pricing is flexible and based on farm size, number of sensors, and services selected. We offer monthly, annual, and custom enterprise plans. Contact us for a personalized quote.',
     },
     {
       id: 'integration',
-      question: 'How does DreamTeam integrate with existing systems?',
+      question: 'How does Altovex integrate with existing systems?',
       answer: 'We provide APIs, webhooks, and direct integrations with popular farm management platforms. Our team handles the technical setup to ensure seamless data flow.',
     },
     {
@@ -43,7 +43,7 @@ export default function FAQSection() {
       <div className="mx-auto max-w-4xl px-4">
         <div className="mb-16 text-center">
           <h2 className="text-4xl font-bold text-[#07080A] md:text-5xl">Frequently Asked Questions</h2>
-          <p className="mt-4 text-lg text-[#07080A]/60">Find answers to common questions about DreamTeam services</p>
+          <p className="mt-4 text-lg text-[#07080A]/60">Find answers to common questions about Altovex services</p>
         </div>
 
         <div className="space-y-4">

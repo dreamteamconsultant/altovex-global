@@ -20,12 +20,13 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <nav className="flex justify-between items-center py-4">
           {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-[#C9A84C] to-[#00A8FF] rounded-lg flex items-center justify-center text-[#0A0A0A] font-bold text-lg">
-              D
+          <a href="#hero" className="flex items-center gap-4">
+            {/* use BrandLogo visual for Altovex */}
+            <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center text-[#1A3A6B] font-extrabold text-2xl shadow-md">
+              A
             </div>
-            <span className="font-sans font-bold text-2xl text-white">
-              Dream<span className="text-[#C9A84C]">Team</span>
+            <span className="font-sans font-extrabold text-3xl text-white tracking-tight">
+              Altovex
             </span>
           </a>
 

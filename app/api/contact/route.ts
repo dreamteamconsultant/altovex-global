@@ -114,8 +114,8 @@ export async function POST(request: NextRequest) {
 
     // Send email notification
     const { error: emailError } = await resend.emails.send({
-      from: 'DreamTeam Consulting <onboarding@resend.dev>',
-      to: process.env.CONTACT_EMAIL_TO || 'contact@dreamteam.com',
+      from: 'Altovex <onboarding@resend.dev>',
+      to: process.env.CONTACT_EMAIL_TO || 'info@altovexlogistics.com',
       replyTo: sanitizedEmail,
       subject: `New Contact Form Submission from ${sanitizedName}`,
       html: `

@@ -21,10 +21,10 @@ export default function AboutSection() {
           <div>
             <div className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#C9A84C]">About Us</div>
             <h2 className="mb-6 text-4xl font-bold text-[#07080A] md:text-5xl">
-              About DreamTeam Consulting
+              About Altovex
             </h2>
             <p className="mb-6 text-lg text-[#07080A]/70">
-              Founded with a vision to transform agriculture through technology, DreamTeam Consulting brings together expertise in agribusiness, software development, and financial services to create innovative solutions for the agricultural sector. Our team of experienced consultants, developers, and agricultural experts work collaboratively to deliver customized solutions that address the unique challenges faced by farmers, cooperatives, and agribusinesses across Africa.
+              Founded with a vision to transform agriculture through technology, Altovex brings together expertise in agribusiness, software development, and logistics to create practical solutions for the agricultural sector. Our team of experienced operators, developers, and agricultural experts work collaboratively to deliver tailored solutions that address the unique challenges faced by farmers and agribusinesses across Africa.
             </p>
 
             <p className="mb-6 text-lg text-[#07080A]/70">

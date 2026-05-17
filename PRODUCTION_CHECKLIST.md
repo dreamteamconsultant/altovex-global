@@ -1,7 +1,7 @@
-# Production Deployment Checklist for DreamTeam Consulting Website
+# Production Deployment Checklist for Altovex Website
 
 ## Overview
-This is a production-ready Next.js application for DreamTeam Consulting. It includes Supabase for data storage and Resend for email notifications.
+This is a production-ready Next.js application for Altovex. It includes Supabase for data storage and Resend for email notifications.
 
 ## Environment Setup
 
