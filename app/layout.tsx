@@ -2,8 +2,10 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import Providers from '@/components/providers'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Socials from '@/components/Socials'
+import { themeInitScript } from '@/lib/theme'
 
 const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const _spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
@@ -68,7 +70,10 @@ export const viewport = {
   initialScale: 1,
   maximumScale: 5,
   userScalable: true,
-  themeColor: '#07080A',
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#FFFFFF' },
+    { media: '(prefers-color-scheme: dark)', color: '#0F1115' },
+  ],
 };
 
 export default function RootLayout({
@@ -77,12 +82,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased dark bg-background text-foreground">
-        {children}
-        <Socials />
-        <WhatsAppButton />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="min-h-screen bg-background text-foreground antialiased transition-colors duration-500 ease-in-out">
+        <Providers>
+          {children}
+          <Socials />
+          <WhatsAppButton />
+          {process.env.NODE_ENV === 'production' && <Analytics />}
+        </Providers>
       </body>
     </html>
   )

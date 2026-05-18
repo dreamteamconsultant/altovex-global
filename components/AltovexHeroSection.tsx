@@ -94,7 +94,7 @@ I would like to book a consultation.`);
               Tell us the country, what needs to move, and what documents or handling the shipment needs.
             </div>
 
-            <div className="mt-6 rounded-3xl border border-white/10 bg-black p-4 md:p-5">
+            <div className="mt-6 rounded-3xl border border-white/10 bg-[#071428] p-4 md:p-5">
               <h4 className="text-xl font-bold text-white md:text-2xl">Book service fast</h4>
               <p className="mt-2 text-sm text-white/70">Share the corridor, cargo, and delivery needs and we will reply with the next step.</p>
 
@@ -103,7 +103,7 @@ I would like to book a consultation.`);
                   value={country}
                   onChange={(e) => setCountry(e.target.value)}
                   placeholder="Country or corridor"
-                  className="h-14 w-full rounded-md border border-[#d7dbe2] bg-white px-4 text-[#6b7280] outline-none placeholder:text-[#6b7280]"
+                  className="h-14 w-full rounded-md border border-white/10 bg-[#071428] px-4 text-white outline-none placeholder:text-white/45"
                 />
 
                 <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -111,13 +111,13 @@ I would like to book a consultation.`);
                     value={service}
                     onChange={(e) => setService(e.target.value)}
                     placeholder="Service needed"
-                    className="h-14 w-full rounded-md border border-[#d7dbe2] bg-white px-4 text-[#6b7280] outline-none placeholder:text-[#6b7280]"
+                    className="h-14 w-full rounded-md border border-white/10 bg-[#071428] px-4 text-white outline-none placeholder:text-white/45"
                   />
                   <input
                     value={contact}
                     onChange={(e) => setContact(e.target.value)}
                     placeholder="Phone or email"
-                    className="h-14 w-full rounded-md border border-[#d7dbe2] bg-white px-4 text-[#6b7280] outline-none placeholder:text-[#6b7280]"
+                    className="h-14 w-full rounded-md border border-white/10 bg-[#071428] px-4 text-white outline-none placeholder:text-white/45"
                   />
                 </div>
 
@@ -125,7 +125,7 @@ I would like to book a consultation.`);
                   value={cargo}
                   onChange={(e) => setCargo(e.target.value)}
                   placeholder="Cargo / documents needed"
-                  className="h-14 w-full rounded-md border border-[#d7dbe2] bg-white px-4 text-[#6b7280] outline-none placeholder:text-[#6b7280]"
+                  className="h-14 w-full rounded-md border border-white/10 bg-[#071428] px-4 text-white outline-none placeholder:text-white/45"
                 />
 
                 <textarea
@@ -133,12 +133,12 @@ I would like to book a consultation.`);
                   onChange={(e) => setNotes(e.target.value)}
                   placeholder="What should we deliver and where?"
                   rows={3}
-                  className="w-full rounded-md border border-[#d7dbe2] bg-white px-4 py-3 text-[#6b7280] outline-none placeholder:text-[#6b7280]"
+                  className="w-full rounded-md border border-white/10 bg-[#071428] px-4 py-3 text-white outline-none placeholder:text-white/45"
                 />
 
                 <button
                   type="submit"
-                  className="mt-1 flex h-14 w-full items-center justify-center rounded-md bg-[#ff7a00] text-lg font-bold text-white transition-transform hover:scale-[1.01]"
+                  className="mt-1 flex h-14 w-full items-center justify-center rounded-md bg-[#C9A84C] text-lg font-bold text-[#071428] transition-transform hover:scale-[1.01]"
                 >
                   Request Quote
                 </button>

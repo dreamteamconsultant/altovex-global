@@ -51,7 +51,7 @@ export default function ContactSection() {
 
       {/* Floating orbs */}
       <div className="absolute -left-32 top-10 h-64 w-64 rounded-full bg-[#C9A84C] opacity-5 blur-3xl animate-float" />
-      <div className="absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-[#1A3A6B] opacity-5 blur-3xl animate-float animation-delay-2" />
+      <div className="absolute -right-32 bottom-10 h-72 w-72 rounded-full bg-[#071428] opacity-20 blur-3xl animate-float animation-delay-2" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -97,7 +97,7 @@ export default function ContactSection() {
                 { icon: '📍', label: 'Address', value: 'Plot 209/9721, Off Mombasa Road, Nairobi, Kenya' },
                 { icon: '💬', label: 'WhatsApp', value: '+254-708-157-713' },
               ].map((item) => (
-                <div key={item.label} className="rounded-lg border border-white/10 bg-white/5 p-4 hover:border-white/20 transition-colors">
+                <div key={item.label} className="rounded-lg border border-white/10 bg-[#071428] p-4 hover:border-white/20 transition-colors">
                   <div className="flex items-center gap-3">
                     <span className="text-2xl">{item.icon}</span>
                     <div className="flex-1">
@@ -111,7 +111,7 @@ export default function ContactSection() {
           </div>
 
           {/* RIGHT — Booking Form */}
-          <form onSubmit={handleSubmit} className="rounded-xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm md:p-8">
+          <form onSubmit={handleSubmit} className="rounded-xl border border-white/10 bg-[#071428] p-6 backdrop-blur-sm md:p-8">
             <h3 className="mb-6 text-xl font-bold text-white md:text-2xl">Book Your Service</h3>
 
             {/* Status Messages */}
