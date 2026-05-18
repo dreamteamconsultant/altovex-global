@@ -28,7 +28,7 @@ export default function Socials() {
   ];
 
   return (
-    <div className="fixed top-6 right-6 z-50">
+    <div className="fixed right-6 top-1/4 z-50">
       <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden>
         <defs>
           <clipPath id="squircleClip" clipPathUnits="objectBoundingBox">
@@ -40,7 +40,7 @@ export default function Socials() {
       <div className="relative">
         <div className="absolute inset-0 bg-black/20 backdrop-blur-xl rounded-2xl border border-white/10 shadow-2xl" />
 
-        <div className="relative flex items-center gap-x-2 p-2">
+        <div className="relative flex flex-col items-center gap-y-3 p-3">
           {links.map((l) => (
             <a
               key={l.label}
@@ -48,11 +48,11 @@ export default function Socials() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={l.label}
-              className={`relative"`}
+              className="relative"
             >
               <div
                 style={{ clipPath: 'url(#squircleClip)' }}
-                className={`w-14 h-14 ${l.colorFrom} ${l.colorTo} rounded-xl flex items-center justify-center shadow-lg border border-white/10 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl`}
+                className={`w-12 h-12 ${l.colorFrom} ${l.colorTo} rounded-xl flex items-center justify-center shadow-lg border border-white/10 cursor-pointer transform transition-all duration-300 ease-out hover:scale-110 hover:-translate-y-2 hover:shadow-2xl`}
               >
                 {l.svg}
               </div>

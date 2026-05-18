@@ -12,7 +12,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="bg-[#07080A] text-white">
+    <main className="bg-background text-foreground transition-colors duration-300">
       <Navigation />
       <AltovexHeroSection />
       <div className="md:hidden">

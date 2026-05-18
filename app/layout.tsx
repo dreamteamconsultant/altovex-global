@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Space_Grotesk, Space_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
+import Providers from '@/components/providers'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import Socials from '@/components/Socials'
 
@@ -77,12 +78,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className="font-sans antialiased dark bg-background text-foreground">
-        {children}
-        <Socials />
-        <WhatsAppButton />
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans antialiased bg-background text-foreground transition-colors duration-300">
+        <Providers>
+          {children}
+          <Socials />
+          <WhatsAppButton />
+          {process.env.NODE_ENV === 'production' && <Analytics />}
+        </Providers>
       </body>
     </html>
   )

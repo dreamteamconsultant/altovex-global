@@ -2,17 +2,17 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0A0B0E] text-white py-12 md:py-16 border-t border-white/10">
+    <footer className="border-t border-border bg-background py-12 text-foreground transition-colors duration-300 md:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <img src="/altovex-logo.jpg" alt="Altovex Global Logistics logo" className="w-10 h-10 rounded-lg object-cover border border-[#333333] bg-[#07080A]" />
+              <img src="/altovex-logo.jpg" alt="Altovex Global Logistics logo" className="w-10 h-10 rounded-lg border border-border object-cover bg-background" />
               <span className="font-sans font-bold text-base md:text-lg">
                 Altovex <span className="text-[#C9A84C]">Global Logistics</span>
               </span>
             </div>
-            <p className="text-white/60 text-xs md:text-sm">
+            <p className="text-muted-foreground text-xs md:text-sm">
               Just in time, every time. Executing agri commodity trading, transport, logistics, warehousing, and cross-border coordination.
             </p>
           </div>
@@ -31,7 +31,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/60 hover:text-[#C9A84C] transition-colors text-xs md:text-sm"
+                    className="text-muted-foreground hover:text-[#C9A84C] transition-colors text-xs md:text-sm"
                   >
                     {link.label}
                   </a>
@@ -51,7 +51,7 @@ export default function Footer() {
                 'Warehousing',
               ].map((service) => (
                 <li key={service}>
-                  <a href="/contact" className="text-white/60 hover:text-[#C9A84C] transition-colors text-xs md:text-sm">
+                  <a href="/contact" className="text-muted-foreground hover:text-[#C9A84C] transition-colors text-xs md:text-sm">
                     {service}
                   </a>
                 </li>
@@ -72,7 +72,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/60 hover:text-[#C9A84C] transition-colors text-xs md:text-sm"
+                    className="text-muted-foreground hover:text-[#C9A84C] transition-colors text-xs md:text-sm"
                   >
                     {link.label}
                   </a>
@@ -83,8 +83,8 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-8">
-          <div className="text-center text-white/60 text-xs md:text-sm">
+        <div className="border-t border-border pt-8">
+          <div className="text-center text-muted-foreground text-xs md:text-sm">
             <p>
               &copy; {currentYear} Altovex Global Logistics Co. Ltd. All rights reserved. |{' '}
               <a href="/contact" className="hover:text-[#C9A84C] transition-colors">
