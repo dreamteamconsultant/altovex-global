@@ -46,7 +46,7 @@ npm run dev
 - Hero heading is larger and readable on mobile & desktop.
 - Moving words (marquee/word-cycle) move faster and are clearly readable.
 - Social squircle icons appear fixed at the top-right and link to configured social URLs.
-- Contact form sends to the updated default `info@altovexlogistics.com` when `NEXT_PUBLIC_COMPANY_EMAIL` is not set.
+- Contact form sends to the updated default `altovexgl@gmail.com` when `NEXT_PUBLIC_COMPANY_EMAIL` is not set.
 
 Environment variables / assets to set before deployment
 ------------------------------------------------------
@@ -55,7 +55,7 @@ Environment variables / assets to set before deployment
 - `NEXT_PUBLIC_INSTAGRAM_URL`
 - `NEXT_PUBLIC_FACEBOOK_URL`
 - `NEXT_PUBLIC_LINKEDIN_URL`
-- `CONTACT_EMAIL_TO` (e.g., `info@altovexlogistics.com`)
+- `CONTACT_EMAIL_TO` (e.g., `altovexgl@gmail.com`)
 - Add `/public/altovex-logo.jpg` (or update `BrandLogo` to point to preferred image)
 
 Notes for maintainers

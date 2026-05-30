@@ -7,6 +7,7 @@ export default function ContactPage() {
       title="Book Consultation"
       description="Use the form, email link, or WhatsApp to start a consultation for transport, logistics, warehousing, or compliance."
       dark
+      childrenFirst
     >
       <ContactSection />
     </PageShell>

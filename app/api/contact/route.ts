@@ -115,7 +115,7 @@ export async function POST(request: NextRequest) {
     // Send email notification
     const { error: emailError } = await resend.emails.send({
       from: 'Altovex <onboarding@resend.dev>',
-      to: process.env.CONTACT_EMAIL_TO || 'info@altovexlogistics.com',
+      to: process.env.CONTACT_EMAIL_TO || 'altovexgl@gmail.com',
       replyTo: sanitizedEmail,
       subject: `New Contact Form Submission from ${sanitizedName}`,
       html: `

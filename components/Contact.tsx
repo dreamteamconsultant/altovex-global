@@ -15,7 +15,7 @@ export default function Contact() {
     {
       icon: 'fa-envelope',
       title: 'Email',
-      details: process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'info@altovexlogistics.com',
+      details: process.env.NEXT_PUBLIC_COMPANY_EMAIL || 'altovexgl@gmail.com',
     },
   ];
 

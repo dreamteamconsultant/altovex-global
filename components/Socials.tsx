@@ -53,48 +53,27 @@ const socialLinks = [
   },
 ];
 
-export default function Socials() {
-  return (
-    <>
-      <div className="fixed left-4 top-1/2 z-40 hidden -translate-y-1/2 md:block">
-        <div className="rounded-2xl border border-border bg-card/90 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.18)] backdrop-blur-lg">
-          <div className="flex flex-col gap-2">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                title={link.label}
-                className={`flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br ${link.gradient} border border-white/10 transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_0_0_8px_var(--glow)]`}
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
+type SocialsProps = {
+  className?: string;
+  compact?: boolean;
+};
 
-      <div className="fixed bottom-5 left-4 z-40 md:hidden">
-        <div className="rounded-2xl border border-border bg-card/90 p-2 shadow-[0_20px_40px_rgba(0,0,0,0.16)] backdrop-blur-lg">
-          <div className="flex items-center gap-2">
-            {socialLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={link.label}
-                title={link.label}
-                className={`flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br ${link.gradient} border border-white/10 transition-all duration-300 ease-in-out hover:scale-105`}
-              >
-                {link.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    </>
+export default function Socials({ className = '', compact = false }: SocialsProps) {
+  return (
+    <div className={`flex items-center gap-2 sm:gap-3 ${className}`}>
+      {socialLinks.map((link) => (
+        <a
+          key={link.label}
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={link.label}
+          title={link.label}
+          className={`flex items-center justify-center rounded-full bg-gradient-to-br ${link.gradient} border border-white/10 transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-0.5 hover:shadow-[0_0_0_8px_var(--glow)] ${compact ? 'h-8 w-8 sm:h-9 sm:w-9' : 'h-9 w-9 sm:h-10 sm:w-10'}`}
+        >
+          {link.icon}
+        </a>
+      ))}
+    </div>
   );
 }

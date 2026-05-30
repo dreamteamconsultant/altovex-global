@@ -4,8 +4,9 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import Providers from '@/components/providers'
 import WhatsAppButton from '@/components/WhatsAppButton'
-import Socials from '@/components/Socials'
+import CallButton from '@/components/CallButton'
 import { themeInitScript } from '@/lib/theme'
+import SiteChat from '@/components/SiteChat'
 
 const _spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const _spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"] });
@@ -88,8 +89,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-background text-foreground antialiased transition-colors duration-500 ease-in-out">
         <Providers>
+          <SiteChat />
+          <CallButton />
           {children}
-          <Socials />
           <WhatsAppButton />
           {process.env.NODE_ENV === 'production' && <Analytics />}
         </Providers>

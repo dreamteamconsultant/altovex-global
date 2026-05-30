@@ -8,9 +8,16 @@ type PageShellProps = {
   description: string;
   children: ReactNode;
   dark?: boolean;
+  childrenFirst?: boolean;
 };
 
-export default function PageShell({ title, description, children, dark = false }: PageShellProps) {
+export default function PageShell({
+  title,
+  description,
+  children,
+  dark = false,
+  childrenFirst = false,
+}: PageShellProps) {
   return (
     <main className="bg-background text-foreground">
       <Navigation />
@@ -28,14 +35,28 @@ export default function PageShell({ title, description, children, dark = false }
         </div>
       </section>
 
-      <BookConsultationBox
-        tone={dark ? 'dark' : 'light'}
-        compact
-        title="Quick book"
-        description="Share the country, route, cargo, and delivery date so we can reply with the next step."
-      />
+      {childrenFirst ? (
+        <>
+          {children}
+          <BookConsultationBox
+            tone={dark ? 'dark' : 'light'}
+            compact
+            title="Quick book"
+            description="Share the country, route, cargo, and delivery date so we can reply with the next step."
+          />
+        </>
+      ) : (
+        <>
+          <BookConsultationBox
+            tone={dark ? 'dark' : 'light'}
+            compact
+            title="Quick book"
+            description="Share the country, route, cargo, and delivery date so we can reply with the next step."
+          />
 
-      {children}
+          {children}
+        </>
+      )}
 
       <Footer />
     </main>

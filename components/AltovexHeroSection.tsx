@@ -22,7 +22,7 @@ Contact: ${contact}
 Notes: ${notes}
 
 I would like to book a consultation.`);
-    window.location.href = `mailto:info@altovexlogistics.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:altovexgl@gmail.com?subject=${subject}&body=${body}`;
   };
 
   return (

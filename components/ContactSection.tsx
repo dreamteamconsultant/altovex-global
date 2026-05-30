@@ -93,7 +93,7 @@ export default function ContactSection() {
               <h3 className="text-lg font-semibold text-white md:text-xl">Get In Touch</h3>
               {[
                 { icon: '📞', label: 'Phone', value: '+254-718-554-383 / +254-708-157-713' },
-                { icon: '✉️', label: 'Email', value: 'info@altovexlogistics.com' },
+                { icon: '✉️', label: 'Email', value: 'altovexgl@gmail.com' },
                 { icon: '📍', label: 'Address', value: 'Plot 209/9721, Off Mombasa Road, Nairobi, Kenya' },
                 { icon: '💬', label: 'WhatsApp', value: '+254-708-157-713' },
               ].map((item) => (

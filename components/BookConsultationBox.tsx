@@ -5,7 +5,7 @@ type BookConsultationBoxProps = {
   compact?: boolean;
 };
 
-const emailAddress = 'info@altovexlogistics.com';
+const emailAddress = 'altovexgl@gmail.com';
 const whatsappNumber = '254708157713';
 
 export default function BookConsultationBox({
