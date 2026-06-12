@@ -4,13 +4,13 @@ export default function LoconavTrackingSection() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 md:gap-10 lg:grid-cols-[1fr_0.9fr] lg:items-center">
           <div>
-            <div className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">Our Loconav Fleet Management Technology & Tracking Excellence</div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">End-to-end real-time visibility, transparency, and operational control.</h2>
+            <div className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">Intelligent Supply Chain & Real-Time Data</div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Technology &amp; Tracking Excellence &mdash; End-to-end visibility, transparency, and control.</h2>
             <p className="mt-4 text-sm md:text-base lg:text-lg leading-7 md:leading-8 text-white/70">
-              We invested in the Loconav advanced fleet management and tracking systems to deliver end-to-end real-time tracking, transparency, and operational control across our logistics network. Secure online data portals give clients live operational data, route progress, and exception alerts at any time.
+              We invest in advanced systems for real-time tracking and transparency. Our precision trackers and online data portals provide actionable data, ensuring the safety of perishables and high-value shipments with 24/7 visibility &mdash; enabling critical business decisions based on real-time logistics intelligence.
             </p>
             <p className="mt-4 text-sm md:text-base lg:text-lg leading-7 md:leading-8 text-white/70">
-              Clients benefit from dedicated live dashboards that display real-time location, temperature monitoring, humidity tracking, route progress, and automated deviation alerts in one unified interface.
+              Our technology infrastructure integrates IoT sensors, GPS tracking, and cloud-based analytics to deliver comprehensive shipment visibility. Clients access dedicated dashboards displaying live location tracking, temperature monitoring, humidity levels, estimated arrival times, automated deviation alerts, and route progress visibility.
             </p>
           </div>
 
@@ -29,7 +29,7 @@ export default function LoconavTrackingSection() {
               ))}
             </div>
             <div className="mt-4 md:mt-6 rounded-lg md:rounded-xl border border-[#C9A84C]/20 bg-[#07080A] p-4 md:p-5 text-xs md:text-sm leading-6 md:leading-7 text-white/70">
-              Our 4K ultra HD video telematic monitoring adds another layer of cargo security and documentation, strengthening compliance and chain-of-custody verification.
+              Our 4K ultra HD video telematic monitoring adds an additional layer of cargo security and chain-of-custody verification.
             </div>
           </div>
         </div>

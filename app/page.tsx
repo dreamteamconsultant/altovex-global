@@ -4,9 +4,8 @@ import AboutSection from '@/components/AboutSection';
 import AltovexHeroSection from '@/components/AltovexHeroSection';
 import ExecutiveArchitectureSection from '@/components/ExecutiveArchitectureSection';
 import RegionalNetworkSection from '@/components/RegionalNetworkSection';
-import FleetExcellenceSection from '@/components/FleetExcellenceSection';
-import LoconavTrackingSection from '@/components/LoconavTrackingSection';
-import ComplianceWarehousingSection from '@/components/ComplianceWarehousingSection';
+import ServicesOverviewSection from '@/components/ServicesOverviewSection';
+import HighlightBand from '@/components/HighlightBand';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 
@@ -15,15 +14,15 @@ export default function Home() {
     <main className="bg-[#07080A] text-white">
       <Navigation />
       <AltovexHeroSection />
+      <HighlightBand variant="light" />
       <div className="md:hidden">
         <DashboardMetrics />
       </div>
       <AboutSection />
       <ExecutiveArchitectureSection />
       <RegionalNetworkSection />
-      <FleetExcellenceSection />
-      <LoconavTrackingSection />
-      <ComplianceWarehousingSection />
+      <HighlightBand variant="light" />
+      <ServicesOverviewSection />
       <ContactSection />
       <Footer />
     </main>

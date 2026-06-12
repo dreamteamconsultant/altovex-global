@@ -22,10 +22,10 @@ export default function BrandLogo({ scrolled = false, compact = false }: BrandLo
 
       {!compact && (
         <span className="min-w-0 leading-none">
-          <span className={`block whitespace-nowrap text-[0.68rem] font-semibold uppercase tracking-[0.3em] transition-colors duration-300 md:text-[0.75rem] ${scrolled ? 'text-foreground/70' : 'text-primary/80'}`}>
+          <span className="block whitespace-nowrap text-[0.68rem] font-semibold uppercase tracking-[0.3em] transition-colors duration-300 md:text-[0.75rem] text-[#1A3A6B] dark:text-[#C9A84C]">
             Altovex Global Logistics
           </span>
-          <span className={`mt-1 block text-[0.62rem] font-medium uppercase tracking-[0.26em] transition-colors duration-300 md:text-[0.68rem] ${scrolled ? 'text-foreground' : 'text-primary'}`}>
+          <span className="mt-1 block text-[0.62rem] font-medium uppercase tracking-[0.26em] transition-colors duration-300 md:text-[0.68rem] text-[#07080A] dark:text-white">
             Company Limited
           </span>
         </span>

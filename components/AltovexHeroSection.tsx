@@ -22,7 +22,7 @@ Contact: ${contact}
 Notes: ${notes}
 
 I would like to book a consultation.`);
-    window.location.href = `mailto:altovexgl@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@altovexlogistics.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -38,10 +38,10 @@ I would like to book a consultation.`);
               Altovex Global Logistics
             </h1>
             <div className="mt-5 inline-flex items-center gap-3 rounded-full border border-[#C9A84C]/30 bg-[#C9A84C]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-[#C9A84C] sm:text-sm">
-              Global logistics company limited
+              Premier Architect of Integrated Transport &amp; Logistics Solutions
             </div>
             <p className="mt-6 max-w-2xl text-sm leading-7 text-white/70 md:text-base md:leading-8">
-              Altovex coordinates transport, cold chain, customs compliance, warehousing, and regional corridor movement across Kenya, Uganda, Zambia, East Africa, and SADC with clarity and control.
+              Altovex coordinates transport, cold chain, customs compliance, warehousing, and agri commodity trading across Kenya, Uganda, Zambia, East Africa, and beyond &mdash; with precision, speed, and unwavering reliability.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4">
@@ -55,9 +55,9 @@ I would like to book a consultation.`);
 
             <div className="mt-12 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4">
               {[
-                ['Kenya', 'Nairobi and Mombasa'],
-                ['Uganda', 'Kampala corridor'],
-                ['Zambia', 'Lusaka and Ndola'],
+                ['Kenya', 'Nairobi & Mombasa'],
+                ['Uganda', 'Kampala Corridor'],
+                ['Zambia', 'Lusaka & Ndola'],
                 ['Reach', 'East Africa + SADC'],
               ].map(([title, value]) => (
                 <div key={title} className="rounded-lg md:rounded-xl border border-white/10 bg-white/5 p-3 md:p-4">

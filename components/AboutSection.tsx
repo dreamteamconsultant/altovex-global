@@ -11,32 +11,36 @@ export default function AboutSection() {
 
               {/* Floating stat card */}
               <div className="relative z-10 absolute -bottom-8 -right-8 rounded-xl border border-[#C9A84C]/30 bg-[#C9A84C] p-6 text-[#07080A] shadow-xl">
-                <div className="text-3xl font-bold">500K+</div>
-                <div className="text-sm font-semibold">Lives Improved</div>
+                <div className="text-3xl font-bold">3+</div>
+                <div className="text-sm font-semibold">Countries Served</div>
               </div>
             </div>
           </div>
 
           {/* RIGHT */}
           <div>
-            <div className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#C9A84C]">About Us</div>
+            <div className="mb-2 text-sm font-semibold uppercase tracking-widest text-[#C9A84C]">The Executive Architecture</div>
             <h2 className="mb-6 text-4xl font-bold text-[#07080A] md:text-5xl">
               About Altovex
             </h2>
             <p className="mb-6 text-lg text-[#07080A]/70">
-              Founded with a vision to transform agriculture through technology, Altovex brings together expertise in agribusiness, software development, and logistics to create practical solutions for the agricultural sector. Our team of experienced operators, developers, and agricultural experts work collaboratively to deliver tailored solutions that address the unique challenges faced by farmers and agribusinesses across Africa.
+              Altovex Global Logistics Company Limited stands as a premier architect of integrated transport and logistics solutions. Our influence spans Africa and beyond, specializing in complex import and export operations.
             </p>
 
             <p className="mb-6 text-lg text-[#07080A]/70">
-              We believe in the power of technology to drive sustainable agricultural development, empower rural communities, and create economic opportunities for millions of smallholder farmers.
+              We are defined by our pan-regional footprint across Kenya, Uganda, and Zambia &mdash; offering a sophisticated logistics network designed to eliminate supply chain friction and maximize operational velocity. Our strategic positioning combines deep local expertise with comprehensive regional capabilities to deliver unparalleled service excellence.
+            </p>
+
+            <p className="mb-6 text-lg text-[#07080A]/70">
+              Through relentless innovation and an unwavering commitment to quality, Altovex has established itself as the definitive choice for enterprises seeking world-class logistics partnerships in the East African corridor and beyond.
             </p>
 
             <div className="mb-8 space-y-3">
               {[
-                "15+ years combined agritech expertise",
-                "Serving 512+ active farms across Africa",
-                "Open source commitment to rural tech",
-                "Partnerships with FAO, World Bank, AGRA",
+                "Pan-regional presence across 3+ countries",
+                "Serving clients across East Africa & SADC",
+                "24/7 operational visibility and support",
+                "Dedicated cold chain and compliance teams",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-3">
                   <span className="h-1 w-1 rounded-full bg-[#C9A84C]" />
