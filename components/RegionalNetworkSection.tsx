@@ -3,17 +3,17 @@ export default function RegionalNetworkSection() {
     {
       name: 'Kenya',
       cities: 'Nairobi + Mombasa',
-      note: 'East African gateway and coastal trade anchor',
+      note: 'East African gateway and coastal trade anchor. Primary hub for import/export operations and regional distribution.',
     },
     {
       name: 'Uganda',
       cities: 'Kampala',
-      note: 'Landlocked corridor connection and inland transit control',
+      note: 'Landlocked corridor connection and inland transit control. Strategic link for East African cross-border movement.',
     },
     {
       name: 'Zambia',
       cities: 'Lusaka + Ndola',
-      note: 'SADC extension with strong southern corridor reach',
+      note: 'SADC extension with strong southern corridor reach. Gateway to Central and Southern African markets.',
     },
   ];
 
@@ -21,10 +21,10 @@ export default function RegionalNetworkSection() {
     <section id="network" className="bg-[#07080A] py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 max-w-3xl">
-          <div className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">Pan-Regional Network & Strategic Corridors</div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Regional coverage that connects markets and borders.</h2>
+          <div className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">Strategic Corridors</div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white">Pan-Regional Network &mdash; Regional coverage that connects markets and borders.</h2>
           <p className="mt-4 text-sm md:text-base lg:text-lg leading-7 md:leading-8 text-white/70">
-            Our operations in Kenya, Uganda, and Zambia provide critical local expertise backed by a robust regional framework. We offer a seamless connection between major East African cities, unified into a single high-efficiency network that ensures timely cargo haulage for our elite client base.
+            Our operations in Kenya, Uganda, and Zambia provide critical local expertise backed by a robust regional framework. We offer seamless connections between all major East African cities, unified into a single high-efficiency network that ensures timely cargo haulage. Our network leverages strategic partnerships, advanced routing algorithms, and localized knowledge to deliver optimal transit times and cost efficiencies.
           </p>
         </div>
 

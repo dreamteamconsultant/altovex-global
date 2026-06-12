@@ -56,11 +56,12 @@ export default function ContactSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-12 text-center md:mb-16">
+          <div className="mb-3 text-xs sm:text-sm font-semibold uppercase tracking-[0.3em] text-[#C9A84C]">Partner With Us</div>
           <h2 className="mb-4 text-3xl font-bold text-white md:text-4xl lg:text-5xl">
             Book Your Service Today
           </h2>
           <p className="mx-auto max-w-2xl text-sm text-white/60 md:text-base">
-            Connect with our logistics experts to discuss your transport, warehousing, or supply chain needs
+            Connect with our logistics experts to discuss your transport, warehousing, cold chain, or supply chain needs.
           </p>
         </div>
 
@@ -71,12 +72,12 @@ export default function ContactSection() {
               <h3 className="mb-6 text-xl font-bold text-[#C9A84C] md:text-2xl">Why Choose Altovex?</h3>
               <ul className="space-y-4">
                 {[
-                  'Real-time tracking across 4+ countries',
-                  'Cold chain expertise with 99% compliance',
-                  'Customs clearance in 24-48 hours',
+                  'Real-time tracking across East Africa + SADC',
+                  'Cold chain expertise with full compliance reporting',
+                  'Customs clearance with HS code classification',
                   'Dedicated account management',
-                  ' 24/7 operational support',
-                  'Cost-optimized route planning',
+                  '24/7 operational support',
+                  'Cost-optimized route planning across 3+ countries',
                 ].map((benefit, i) => (
                   <li key={i} className="flex items-start gap-3">
                     <div className="mt-1 flex-shrink-0">
@@ -93,9 +94,9 @@ export default function ContactSection() {
               <h3 className="text-lg font-semibold text-white md:text-xl">Get In Touch</h3>
               {[
                 { icon: '📞', label: 'Phone', value: '+254-718-554-383 / +254-708-157-713' },
-                { icon: '✉️', label: 'Email', value: 'altovexgl@gmail.com' },
+                { icon: '✉️', label: 'Email', value: 'info@altovexlogistics.com' },
                 { icon: '📍', label: 'Address', value: 'Plot 209/9721, Off Mombasa Road, Nairobi, Kenya' },
-                { icon: '💬', label: 'WhatsApp', value: '+254-708-157-713' },
+                { icon: '💬', label: 'WhatsApp', value: '+254-718-554-383' },
               ].map((item) => (
                 <div key={item.label} className="rounded-lg border border-white/10 bg-[#071428] p-4 hover:border-white/20 transition-colors">
                   <div className="flex items-center gap-3">

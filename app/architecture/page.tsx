@@ -5,7 +5,7 @@ export default function ArchitecturePage() {
   return (
     <PageShell
       title="Executive Architecture"
-      description="The operating structure that coordinates trade, logistics, and cross-border execution with control and clarity."
+      description="The mission and vision that anchor every corridor, cargo handover, and compliance decision across the Altovex network."
       dark
     >
       <ExecutiveArchitectureSection />

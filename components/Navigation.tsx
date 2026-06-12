@@ -37,10 +37,10 @@ export default function Navigation() {
 
   const navLinks = [
     { label: 'About', href: '/about' },
-    { label: 'Architecture', href: '/architecture' },
+    { label: 'Mission & Vision', href: '/mission-vision' },
     { label: 'Network', href: '/network' },
-    { label: 'Fleet', href: '/fleet' },
-    { label: 'Compliance', href: '/compliance' },
+    { label: 'Services', href: '/services' },
+    { label: 'Pure Grow', href: '/pure-grow' },
     { label: 'Contact', href: '/contact' },
   ];
 
@@ -49,22 +49,22 @@ export default function Navigation() {
       
 
       {/* Ticker Strip */}
-      <div className="overflow-hidden border-b border-border/20 bg-white/10 dark:bg-black/30 backdrop-blur-md transition-colors duration-300">
+      <div className="overflow-hidden border-b border-[#07080A]/10 bg-white dark:border-white/10 dark:bg-[#0B1929] transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4 py-2">
-          <div className="animate-ticker flex items-center gap-6 whitespace-nowrap text-xs font-bold uppercase tracking-widest text-muted-foreground md:gap-8 md:text-sm">
-            {['Executive Architecture', 'Regional Corridors', 'Fleet Excellence', 'Cold Chain', 'Customs Compliance', 'Warehousing', 'Tracking', 'Trade Visibility'].map((item, i) => (
+          <div className="animate-ticker flex items-center gap-6 whitespace-nowrap text-xs font-bold uppercase tracking-widest text-[#07080A]/80 dark:text-white/85 md:gap-8 md:text-sm">
+            {['Executive Architecture', 'Pan-Regional Corridors', 'Fleet Excellence', 'Cold Chain', 'Customs Compliance', 'Warehousing', 'Pure Grow Initiative', 'Prefab Solutions', 'Last-Mile Precision', 'Trade Visibility'].map((item, i) => (
               <span key={i} className="flex items-center gap-6 md:gap-8">
                 {item}
-                <span className="text-primary">•</span>
+                <span className="text-[#C9A84C]">•</span>
               </span>
             ))}
           </div>
         </div>
       </div>
 
-      <div className="border-b border-border/20 bg-white/10 dark:bg-black/30 backdrop-blur-lg">
+      <div className="border-b border-[#07080A]/10 bg-white dark:border-white/10 dark:bg-[#0B1929]">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-2 sm:px-6 lg:px-8">
-          <span className="hidden text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-muted-foreground sm:block">
+          <span className="hidden text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#07080A]/55 dark:text-white/55 sm:block">
             Follow Altovex
           </span>
           <div className="ml-auto flex items-center gap-3">
@@ -82,7 +82,7 @@ export default function Navigation() {
       </div>
 
       {/* Main Navigation Bar */}
-      <nav className="sticky top-0 z-50 border-b border-border/20 bg-white/20 dark:bg-slate-900/30 text-foreground backdrop-blur-xl transition-all duration-300">
+      <nav className="sticky top-0 z-50 border-b border-[#07080A]/10 bg-white text-[#07080A] shadow-[0_2px_18px_rgba(7,8,10,0.06)] dark:border-white/10 dark:bg-[#07080A] dark:text-white dark:shadow-[0_2px_18px_rgba(0,0,0,0.5)] transition-colors duration-300">
         <div className="mx-auto max-w-7xl px-4">
           <div className="grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-4 py-4">
             <div className="min-w-0 relative z-20">
@@ -94,30 +94,31 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+                  className="group relative whitespace-nowrap text-sm font-semibold uppercase tracking-wider text-[#07080A]/80 transition-colors hover:text-[#1A3A6B] dark:text-white/85 dark:hover:text-[#C9A84C]"
                 >
                   {link.label}
+                  <span className="pointer-events-none absolute inset-x-0 -bottom-1 mx-auto block h-0.5 w-0 bg-[#C9A84C] transition-all duration-300 group-hover:w-full" />
                 </Link>
               ))}
             </div>
 
             <div className="flex items-center gap-3 justify-self-end">
               <a
-                href="tel:+254708157713"
-                className="hidden rounded-full border border-border px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-muted-foreground transition-colors hover:border-primary/40 hover:text-primary md:inline-flex"
+                href="tel:+254718554383"
+                className="hidden rounded-full border border-[#07080A]/15 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#07080A]/80 transition-colors hover:border-[#C9A84C] hover:text-[#1A3A6B] dark:border-white/15 dark:text-white/85 dark:hover:text-[#C9A84C] md:inline-flex"
               >
-                +254 708 157 713
+                +254 718 554 383
               </a>
               <Link
                 href="/contact"
-                className="hidden items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold uppercase tracking-[0.22em] text-primary-foreground shadow-[0_12px_30px_var(--glow)] transition-all hover:scale-105 sm:inline-flex"
+                className="hidden items-center gap-2 rounded-full bg-[#C9A84C] px-5 py-2 text-sm font-bold uppercase tracking-[0.22em] text-[#07080A] shadow-[0_12px_30px_rgba(201,168,76,0.35)] transition-all hover:scale-105 hover:shadow-[0_14px_36px_rgba(201,168,76,0.5)] sm:inline-flex"
               >
                 Book Service
               </Link>
 
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="inline-flex items-center justify-center rounded-full border border-border p-2 text-foreground transition-colors hover:border-primary hover:text-primary lg:hidden"
+                className="inline-flex items-center justify-center rounded-full border border-[#07080A]/15 p-2 text-[#07080A] transition-colors hover:border-[#C9A84C] hover:text-[#C9A84C] dark:border-white/15 dark:text-white lg:hidden"
                 aria-expanded={isMobileMenuOpen}
                 aria-label="Toggle menu"
               >
